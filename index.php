@@ -15,11 +15,14 @@ if (empty($_SESSION['username']) OR empty($_SESSION['password'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
-<body>
+<body class="h-100">
+    <nav>
     <header>
         Aplikasi Manajemen Pegawai
     </header>
@@ -31,6 +34,7 @@ if (empty($_SESSION['username']) OR empty($_SESSION['password'])) {
                 <li><a href="?hal=jabatan">Data Jabatan</a></li>
                 <li><a href="logout.php">Keluar</a></li>
             </ul>
+    </nav>
         </aside>
         <section class="main">
             <?php include "konten.php" ?>
